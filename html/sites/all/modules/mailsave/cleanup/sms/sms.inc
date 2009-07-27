@@ -46,6 +46,7 @@ function sms_mailsave_clean(&$node, $result, $i, $header, $mailbox) {
       'mms.att.net' => 'txt.att.net',
       'vzwpix.com' => 'vtext.com',
       'mms.tigo.com.co' => 'sms.tigo.com.co',
+      'mms.comcel.net' => 'comcel.com.co',
     );
     if (isset($email_gateway_aliases[$from[1]])) {
       $from[1] = $email_gateway_aliases[$from[1]];
