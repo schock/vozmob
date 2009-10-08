@@ -31,7 +31,7 @@ function mailsave_to_textpart_mailsave($node, $result, $i, $header, $mailbox) {
       if (strpos($node->body, $mimepart->data) === FALSE) {
         // @fixme: This breaks orange.fr.
         // We need carrier-specific code to add desired textparts into the body.
-        // $node->body .= "\n" . $mimepart->data;
+        $node->body .= "\n" . $mimepart->data;
       }
     }
     $image = (strpos($mimepart->filemime, 'IMAGE/') === 0) ? TRUE : FALSE;
